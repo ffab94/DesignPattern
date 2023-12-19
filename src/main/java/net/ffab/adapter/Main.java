@@ -6,13 +6,6 @@ import net.ffab.adapter.computer.UniteCentrale;
 import net.ffab.adapter.computer.VideoProjecteur;
 import net.ffab.adapter.computer.adapter.HdmiVgaAdapter;
 import net.ffab.adapter.computer.adapter.HdmiVgaAdapterH;
-import net.ffab.builder_singleton.model.AccountStatus;
-import net.ffab.builder_singleton.model.BankAccount;
-import net.ffab.builder_singleton.repository.AccountRepositoryImpl;
-import net.ffab.builder_singleton.util.JsonSerializer;
-
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args)  throws Exception{

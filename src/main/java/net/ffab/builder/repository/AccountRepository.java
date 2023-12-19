@@ -1,4 +1,4 @@
-package net.ffab.protype.repository;
+package net.ffab.builder.repository;
 
 import net.ffab.builder.model.BankAccount;
 

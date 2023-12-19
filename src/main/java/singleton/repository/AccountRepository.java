@@ -1,6 +1,6 @@
-package net.ffab.protype.repository;
+package singleton.repository;
 
-import net.ffab.builder.model.BankAccount;
+import singleton.model.BankAccount;
 
 import java.util.List;
 import java.util.Optional;

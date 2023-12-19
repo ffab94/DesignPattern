@@ -1,6 +1,6 @@
-package net.ffab.builder_singleton.repository;
+package net.ffab.singleton.repository;
 
-import net.ffab.builder_singleton.model.BankAccount;
+import net.ffab.singleton.model.BankAccount;
 
 import java.util.List;
 import java.util.Optional;

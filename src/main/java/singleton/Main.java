@@ -1,9 +1,9 @@
-package net.ffab.builder_singleton;
+package singleton;
 
-import net.ffab.builder_singleton.model.AccountStatus;
-import net.ffab.builder_singleton.model.BankAccount;
-import net.ffab.builder_singleton.repository.AccountRepositoryImpl;
-import net.ffab.builder_singleton.util.JsonSerializer;
+import singleton.model.AccountStatus;
+import singleton.model.BankAccount;
+import singleton.repository.AccountRepositoryImpl;
+import singleton.util.JsonSerializer;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public class Main {
          */
 
         //AccountRepositoryImpl accountRepository=new AccountRepositoryImpl();
-        AccountRepositoryImpl accountRepository=AccountRepositoryImpl.getInstance();
+        AccountRepositoryImpl accountRepository= AccountRepositoryImpl.getInstance();
 
         //List<BankAccount> bankAccounts = accountRepository.findAll();
         List<BankAccount> bankAccounts = accountRepository.searchAccount(bankAccount ->

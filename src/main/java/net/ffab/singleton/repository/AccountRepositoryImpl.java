@@ -1,9 +1,9 @@
-package net.ffab.protype.repository;
+package net.ffab.singleton.repository;
 
-import net.ffab.builder.model.AccountStatus;
-import net.ffab.builder.model.AccountType;
-import net.ffab.builder.model.BankAccount;
-import net.ffab.builder.model.BankDirector;
+import net.ffab.singleton.model.AccountStatus;
+import net.ffab.singleton.model.AccountType;
+import net.ffab.singleton.model.BankAccount;
+import net.ffab.singleton.model.BankDirector;
 
 import java.util.HashMap;
 import java.util.List;
@@ -86,8 +86,8 @@ public class AccountRepositoryImpl implements AccountRepository {
         for (int i = 0; i <10; i++) {
             BankAccount bankAccount= BankDirector.accountBuilder()
                     .balance(10000*Math.random()*90000)
-                    .type(Math.random()>0.5? AccountType.SAVING_ACCOUNT:AccountType.CURRENT_ACCOUNT)
-                    .status(Math.random()>0.5? AccountStatus.CREATED:AccountStatus.ACTIVATED)
+                    .type(Math.random()>0.5? AccountType.SAVING_ACCOUNT: AccountType.CURRENT_ACCOUNT)
+                    .status(Math.random()>0.5? AccountStatus.CREATED: AccountStatus.ACTIVATED)
                     .currency(Math.random()>0.5?"MAD":"USD")
                     .build();
 

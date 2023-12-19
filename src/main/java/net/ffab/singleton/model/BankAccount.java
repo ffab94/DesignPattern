@@ -1,4 +1,4 @@
-package net.ffab.builder_singleton.model;
+package net.ffab.singleton.model;
 
 public class BankAccount {
     private Long accountId;

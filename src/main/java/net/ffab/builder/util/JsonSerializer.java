@@ -1,4 +1,4 @@
-package net.ffab.builder_singleton.util;
+package net.ffab.builder.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

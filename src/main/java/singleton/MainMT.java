@@ -1,9 +1,8 @@
-package net.ffab.builder_singleton;
+package singleton;
 
-import net.ffab.builder_singleton.model.AccountStatus;
-import net.ffab.builder_singleton.model.BankAccount;
-import net.ffab.builder_singleton.repository.AccountRepositoryImpl;
-import net.ffab.builder_singleton.util.JsonSerializer;
+import singleton.model.BankAccount;
+import singleton.repository.AccountRepositoryImpl;
+import singleton.util.JsonSerializer;
 
 import java.util.List;
 
@@ -11,7 +10,7 @@ public class MainMT {
     public static void main(String[] args)  throws Exception{
         JsonSerializer<BankAccount> bankAccountJsonSerializer=new JsonSerializer<>();
 
-        AccountRepositoryImpl accountRepository=AccountRepositoryImpl.getInstance();
+        AccountRepositoryImpl accountRepository= AccountRepositoryImpl.getInstance();
 
         for (int i = 0; i < 10; i++) {
             new Thread(() ->{
